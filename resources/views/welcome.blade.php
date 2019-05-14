@@ -4,14 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>CSS Grid Example</title>
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Monserrat|Roboto:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
-        <link rel="stylesheet" href="{{ asset('public/css/responsive.css') }}">
     </head>
     <body>
     <header>
@@ -158,6 +160,7 @@
               </ul>
           </div> <!-- end footer-content -->
       </footer>
-
+    <!-- Scripts -->
+    <script src="{{ asset('public/js/app.js') }}" defer></script>
     </body>
 </html>

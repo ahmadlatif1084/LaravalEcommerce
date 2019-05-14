@@ -13,4 +13,4 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js');
 mix.sass('resources/sass/app.scss', 'public/css');
-mix.sass('resources/assets/sass/responsive.scss', 'public/css');;
+mix.sass('http://localhost/LaravalEcommerce/resources/sass/responsive.scss', 'public/css');
